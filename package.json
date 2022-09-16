@@ -1,0 +1,23 @@
+{
+  "name": "c7-m3s18",
+  "version": "1.0.0",
+  "description": "Ejemplo de Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MikelEngel/C7-M3S18.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MikelEngel/C7-M3S18/issues"
+  },
+  "homepage": "https://github.com/MikelEngel/C7-M3S18#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
