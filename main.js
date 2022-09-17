@@ -117,8 +117,7 @@ app.put("/mascota", (req, res)=> {
 
     }
 
-    const{
-        tipo,
+    const{ tipo,
         edad,
         color,
         peso,
