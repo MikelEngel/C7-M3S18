@@ -6,7 +6,25 @@
 5. Levantar el servidor
 */
 
+const mascotas = [
+    {
+        tipo: "Perro",
+        edad: 5,
+        color: "Blanco",
+        peso: "8 kg",
+        nombre: "Pedro"
 
+    },
+
+    {
+        tipo: "Gato",
+        edad: 2,
+        color: "negro",
+        peso: "3 kg",
+        nombre: "Michi"
+
+    },
+]
  
 //! 1. Importar tods nuestras bibliotecas
 
@@ -26,6 +44,20 @@ app.get("/", (req, res)=>{
     res.json({mensaje:'Hola'})
 });
 app.post
+
+
+//CREATE - Se hace con POST
+app.post("/masacota", (req, res)=>{
+    const { tipo, edad, color, peso, nombre } = req.body;
+    mascotas.push( {tipo, edad, color, peso, nombre});
+    res.jason({mensaje: "Mascota registrada", data:mascotas});
+});
+
+//READ - GET
+app.get ("/mascota", (req, res)=> {
+    res.json({ mascotas });
+});
+
 
 //! 5. Levantar el servidor
 
